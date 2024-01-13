@@ -1,0 +1,33 @@
+{
+  "name": "gold-rate-api",
+  "version": "1.0.0",
+  "description": "Retreives gold rate from web",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gold",
+    "rate",
+    "api"
+  ],
+  "author": "Anbuselvan Rocky",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "netlify-cli": "^17.13.2",
+    "netlify-lambda": "^2.0.16",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
